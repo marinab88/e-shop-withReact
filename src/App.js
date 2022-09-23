@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import RenderProduct from './components/product/Product'
+// import Product from './models/Product'
+import Image1 from './img/paleta-machiaj.jpg'
+import Image2 from './img/patch-uri.jpg'
+import Image3 from './img/ruj.jpg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <RenderProduct name='Paleta de machiaj' image={Image1}/>
+      <RenderProduct name='Patch-uri' image={Image2}/>
+      <RenderProduct name='Ruj' image={Image3}/>
+      {/* <Product name='Paleta de machiaj' image={Image1}/>
+      <Product name='Patch-uri' image={Image2}/>
+      <Product name='Ruj' image={Image3}/> */}
     </div>
   );
 }
