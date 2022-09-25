@@ -1,12 +1,11 @@
-import Product from './models/Product'
+// import Product from './models/Product'
 
 const RenderProduct = (product) => {
-  product = new Product();
-  
+    
   return (
     <div>
        <h2>{product.name}</h2>
-      <img src={product.image} alt="Img"></img> 
+      <img src={product.image} alt="Img" /> 
     </div>
   )
 }
