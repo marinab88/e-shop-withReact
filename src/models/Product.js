@@ -29,7 +29,7 @@ class Product {
 //     return (
 //       <div>
 //         <h2>{this.props.name}</h2>
-//         <img src={this.props.image} alt='Img'></img>
+//         <img src={this.props.image} alt='Img' />
 //       </div>
 //     )
 //   }
