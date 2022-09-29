@@ -8,16 +8,35 @@ function App() {
 
   let product = new Product();
   
+  let productArr = [
+        {
+          name: 'Paleta de machiaj',
+          image: Image1
+        },
+        {
+          name: 'Patch-uri',
+          image: Image2
+        },
+        {
+          name: 'Ruj',
+          image: Image3
+        }
+      ]
+
   return (
     <div>
-      <RenderProduct name='Paleta de machiaj' image={Image1} />
-      <RenderProduct name='Patch-uri' image={Image2} />
-      <RenderProduct name='Ruj' image={Image3} />
+      { productArr.map( item => 
+          <RenderProduct name={item.name}image={item.image} />
+        )
+      }
+      {/* <RenderProduct name='Patch-uri' image={Image2} />
+      <RenderProduct name='Ruj' image={Image3} /> */}
       {/* <Product name='Paleta de machiaj' image={Image1}/>
       <Product name='Patch-uri' image={Image2}/>
       <Product name='Ruj' image={Image3}/> */}
     </div>
   );
 }
+
 
 export default App;
